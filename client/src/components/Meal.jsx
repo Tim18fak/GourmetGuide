@@ -30,12 +30,16 @@ const Addmeal = ({mealinfo}) => {
       sourceUrl:sourceUrl,
     }
     const GetUrl = `http://localhost:5000/mealplan//mealplan`
-    const { data } = await axios.post(`${GetUrl}?username=${username}`, mealdataTOserver)
+    try{
+	  const { data } = await axios.post(`${GetUrl}?username=${username}`, mealdataTOserver)
     console.log(data)
     console.log(mealinfo)
     console.log('hell')
     console.log(servings)
     setstate((prevstate) => !state)
+    } catch(error){
+    console.error('error',error)
+    }
   }
 
   console.log("hee")
