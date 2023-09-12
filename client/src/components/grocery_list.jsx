@@ -14,7 +14,7 @@ const My_groceryList =  ({fetchgroceryList,fetchdata,Trigger,}) => {
 
     const username = cookie.get('username')
     
-  const GetUrl = `http://localhost:5000/groceryList/getgroceryList`
+  const GetUrl = `http://100.25.150.44:5000/groceryList/getgroceryList`
   const fetchGrocery = async () => {
     const response = await axios.get(`${GetUrl}?username=${username}`);
     setfetchgrocery(response.data)
