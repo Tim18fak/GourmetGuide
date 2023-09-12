@@ -25,10 +25,14 @@ const My_receipe = () => {
   const username = cookie.get('username')
 
   const fetchMeal = async() => {
-    const GetUrl = `http://localhost:5000/mealplan/getmeal`
+    const GetUrl = `http://100.25.150.44:5000/mealplan/getmeal`
+	  try{
     const response = await axios.get(`${GetUrl}?username=${username}`)
     setfetchmeal(response.data)
     console.log(fetchmeal)
+  } catch(error){
+	  console.log('error',error)
+  }
   }
   useEffect(() => {
     fetchMeal()
@@ -38,10 +42,13 @@ const My_receipe = () => {
   }
   const DeleteMealList = async(mealId) => {
   
-    const DeleteUrl = 'http://localhost:5000/mealplan/deleteMeal'
-    const response = await axios.delete(`${DeleteUrl}/${mealId}?username=${username}`)
+    const DeleteUrl = 'http://100.25.150.44:5000/mealplan/deleteMeal'
+    try{
+	  const response = await axios.delete(`${DeleteUrl}/${mealId}?username=${username}`)
     console.log(response.data)
-    fetchMeal()
+    fetchMeal()} catch(error){
+	    console.error('error',error)
+    }
   };
   if(fetchmeal.length == 0) return <MyEmptyMeals />
   return (
