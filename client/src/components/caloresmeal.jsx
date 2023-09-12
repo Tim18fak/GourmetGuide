@@ -7,7 +7,6 @@ import axios from 'axios'
 const Caloresmeal = () => {
   const [mealData,setMealData] = useState(null)
   const [calories,setCalories] = useState(2000)
-  try{
     const savedUserInfo = localStorage.getItem('userinfo');
     console.log(savedUserInfo)
     const userInfo = JSON.parse(savedUserInfo);
@@ -26,9 +25,6 @@ const Caloresmeal = () => {
         console.log(data)
       })
     }
-  } catch(error){
-      console.log('error',error)
-  }
   return (
     <div >
        <section className="App">

@@ -60,7 +60,7 @@ const Auth = () => {
   
 
    const { fullName, username, phoneNumber, avatarURL, password } = form;
-const URL = 'http://localhost:5000/auth';
+const URL = 'http://http://100.25.150.44:5000/auth';
 
 try {
   const response = await axios.post(`${URL}/${Issignup ? 'signup' : 'login'}`, {
