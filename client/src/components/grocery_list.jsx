@@ -16,9 +16,13 @@ const My_groceryList =  ({fetchgroceryList,fetchdata,Trigger,}) => {
     
   const GetUrl = `http://100.25.150.44:5000/groceryList/getgroceryList`
   const fetchGrocery = async () => {
-    const response = await axios.get(`${GetUrl}?username=${username}`);
+	try{
+	  const response = await axios.get(`${GetUrl}?username=${username}`);
     setfetchgrocery(response.data)
+  }catch(error){
+	console.log('error',error);
   }
+}
   fetchdata(fetchGrocery)
   useEffect(() => {
     fetchGrocery();
