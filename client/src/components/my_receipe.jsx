@@ -31,7 +31,7 @@ const My_receipe = () => {
     setfetchmeal(response.data)
     console.log(fetchmeal)
   } catch(error){
-	  console.log('error',error)
+	  console.error('error',error)
   }
   }
   useEffect(() => {
