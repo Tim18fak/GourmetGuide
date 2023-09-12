@@ -1,0 +1,49 @@
+.addgroceryList__button{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin: 1px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.submit__grocery{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   background-color: green;
+   border-radius: 10px;
+}
+.submit__grocery button{
+    width: 20%;
+    margin: 8px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: green;
+    border: 2px solid gold;
+    
+    
+
+}
+.submit__grocery button:hover{
+    background-color: gold;
+}
+.submit__grocery div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    
+}
+.submit__grocery div input{
+    height: 40px;
+    border: 0px;
+    box-shadow: 2px 3px 4px purple;
+    border-radius: 10px;
+}
+.submit__grocery div label{
+    text-align: center;
+    color: white;
+}

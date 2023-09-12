@@ -1,0 +1,27 @@
+.about__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    background-image: url();
+}
+.about__info h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.about__info p{
+    width: 70ch;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.our__mission{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+}
+.our__mission p{
+    width: 70ch;
+    text-align: center;
+    font-size: 1.2rem;
+}

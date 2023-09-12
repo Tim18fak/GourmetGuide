@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header__class-list{
+    background-color: #f7f7f7;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px;
+
+}
+.header__name{
+    padding: 10px;
+    margin: 5px;
+}
+.header__nav-list{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    flex-direction: column;
+    align-content:flex-end;
+}
+.header__class-list-subParent{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+
+}
+.header__class-list-sub{
+    align-self: flex-end;
+    
+}
+.header__class-list-sub p{
+    font-size: 1.2rem;
+   
+    padding: 8px;
+    
+    margin: 0;
+    border: 1px solid #0074E4;
+    border-radius: 5px;
+}
+.header__class-list-sub p:hover{
+    background-color: #4CAF50;
+    color: white;
+    border: 0px;
+}
+.header__class-list-subParent li{
+    font-size: 1.2rem;
+    color: grey;
+    margin: 5px;
+}
+.header__class-list-subParent li:hover,.header__class-list-subParent li:active,.header__class-list-subParent li:focus{
+    color: black;
+}
+.jumbotron-fluid{
+    height: 100vh;
+    background-color: whitesmoke;
+    background-image: url(https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27380.jpg?size=626&ext=jpg&ga=GA1.2.2019912161.1693665243&semt=sph);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.jumbotron-fluid div h1{
+    text-align: right;
+
+}
+.jumbotron-fluid img{
+    width: 2000px;
+}
+.jumbostron__title{
+position: relative;
+top: 40px;
+}
+.jumbostron__title span{
+    display: block;
+}
+.jumbostron__title span strong{
+    color: green;
+}
+.jumbostron__img2{
+    width: 10px;
+    height: auto;
+    border-radius: 50%;
+}
+.Offer__list{
+    height: 100vh;
+    
+}
+.Our__services-underline{
+    width: 120px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+.Offer__list .Our__services{
+    text-align: center;
+    font-size: 3rem;
+    font-weight:500;
+    margin: 5px;
+    padding: 20px;
+
+}
+.Offer__list h2 span{
+    font-weight: bold;
+   
+}
+.Offer__list hr{
+    height: 5px; /* Set the desired height for the <hr> */
+    background-color: #0074E4; /* Set the desired background color */
+    border: none; /* Remove the default border */
+    border-top-left-radius: -50%;
+    border-top-right-radius: ;
+    border-bottom-left-radius: ;
+    border-bottom-right-radius: ;
+}
+.Our__services-option{
+    display: flex;
+    margin: 50px;
+    border-radius: 10px;
+    align-content: center;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    column-gap: 50px;
+
+   
+}
+.Our__services-image-option{
+    height: 50vh;
+    width: 30vw;
+   
+    
+    background-image: url(https://www.healthymealplans.com/static/images/landing-2020/step1-recipes@2x.png);
+}
+.Our__services-option__image{
+    
+}
+
+.Our__services-option__image3{
+    width: 20%;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+    border-radius: 50%;
+    
+}
+.Our__services-option__text{
+    position: relative;
+    top: 80px;
+
+}
+.service__option1 {
+    text-align: center;
+}
+.service__option1 span{
+     color: #0074E4;
+}
+
+.Our__services-option__text p{
+    width: 40ch;
+}
+.Our__services-option__text p button {
+    border: 0px;
+    
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid blue;
+}
+.option__text2{
+    position: relative;
+    top: 100px;
+}
+.option__text2 p button{
+    border: 2px solid orange;
+}
+
+.Our__services-option__text p button:hover{
+    background-color: #0074E4;
+    border-radius: 10px;
+}
+.option__text2 p button:hover{
+    background-color: orange;
+ }
+.service__option span{
+    color: orangered;
+}
+.service__option_join{
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid blue;
+   padding: 10px;
+   border-radius: 20px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+.service__option_join:hover{
+    background-color: #0074E4;
+    color: wheat;
+}
+.service__option_join span{
+    font-weight: 600;
+    
+}
+.pointer__arrow{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+    right: 200px;
+}

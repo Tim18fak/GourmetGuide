@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.create__meal-banner{
+    position: relative;
+    top: -5px;
+    height: 39.6vh;
+    background-color: wheat;
+}
+.create__meal-banner h4{
+    font-size: 1rem;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+    left: 3px;
+    color: purple;
+}
+.create__meal-banner h4 span{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: green;
+}
+.create__meal-banner h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 6px;
+    padding: 6px;
+    font-weight: bold;
+    color: blue;
+    position: relative;
+    top: 50px;
+}
+.create__meal-search-option{
+    position: relative;
+    top: 82px;
+    
+}
+.create__meal-search-option ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    column-gap: 40px;
+}
+.create__meal-search-option ul li{
+    margin: 7px;
+    padding: 10px;
+    border: 2px solid ;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px purple;
+    
+    
+}
+.create__meal-search-option ul li:hover{
+  
+}
+.Save__receipes{
+    margin: 5px;
+    padding: 7px;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px ;
+    
+    background-color: orange;
+}
+.Cuisine__options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    position: relative;
+    top: 20px;
+}
+.cuisine__optons-value img{
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 10px;
+    left: 15px;
+    top: 6px;
+    border-radius: 10px;
+}
+.cuisine__optons-value h1{
+    font-size: 1.3rem;
+}
+.cuisineinfo{
+
+}
+.cuisineinfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cuisineinfo a{
+    text-decoration: none;
+}
+/*css code for calories component*/
+.calories__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.calories__contain{
+    background-color: aqua;
+}
+.calories__contain img{
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.calories__contain h1{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 5px;
+    padding: 7px;
+}

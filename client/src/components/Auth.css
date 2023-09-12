@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signin__SignUp{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: green;
+}
+.Auth__form{
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+   background-color: purple;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   align-content: center;
+}
+.auth__form{
+    margin: 20px;
+    text-align: center;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: auto;
+    
+    position: sticky;
+    left: 150px;
+}
+.Auth__form button{
+    background-color: rgb(0, 60, 255);
+    color: #fff;
+    padding: 10px;
+    margin: 1px;
+    width: 20%;
+    border-radius: 20px;
+}
+.Auth__form_input{
+    width: 400px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Auth__form_input label{
+    margin: 3px;
+    padding: 5px;
+    font-size: 1rem;
+    color: green;
+    font-weight: bold;
+}
+.Auth__form-value__input{
+    border: 0px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px ;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: rgb(43, 46, 226);
+    position: relative;
+    left: 30px;
+    box-shadow: 3px 3px 5px ;
+    margin-bottom: 10px;
+}
+.switchMode{
+    text-align: center;
+    padding: 5px;
+    margin: 2px;
+}
+.Issignup__option{
+    position: relative;
+    left: 200px;
+    top: -10px;
+}
+.switchMode__option{
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+}

@@ -1,0 +1,61 @@
+.banner__name-theme{
+background-color: #0f0f2c;
+padding: 40px;
+margin: 0;
+min-height: 15vh;
+background-image: url("https://assets.website-files.com/62b03a7e084ea567885272c1/62b143c424c7a47360013e71_shape-01.svg");
+}
+.banner__name{
+    color: whitesmoke;
+    margin: 0;
+}
+.banner__theme-word{
+    color: whitesmoke;
+    margin: 0;
+}
+.banner__name span{
+    color: #2dc76d;
+    display: inline-block;
+}
+
+.banner__name-create__meal{
+    padding: 10px;
+    color: #ecf9f2;
+    text-decoration: none;
+    background-color: #2dc76d;
+    margin: 0;
+    position: relative;
+    top: 30px;
+}
+.menu__list{
+    background-color: wheat;
+    margin: 0;
+    background-image: url("https://assets.website-files.com/62b03a7e084ea567885272c1/62b14fcf3c1bf47906ecb73a_shape-03.svg");
+}
+.menu__list h3{
+    padding: 15px;
+    color: #737384;
+}
+.menu__ul-list{
+    list-style: none;
+}
+.menu__ul-list li{
+    padding: 10px;
+    position: relative;
+}
+.menu__ul-list li:hover{
+    
+    border-bottom: 2px solid rgb(4, 0, 255);
+    display: block;
+}
+.profile__dashboard{
+
+}
+.profile__dashboard h2{
+    padding: 10px;
+    font-size: 1rem;
+}
+.profile__dashboard main ul li{
+    padding: 10px;
+    list-style: none;
+}

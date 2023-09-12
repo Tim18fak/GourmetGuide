@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+}
+.dash{
+  display: flex;
+}
+.Maincontent{
+  width: 78.25%;
+}
+.Sidebar{
+  background-color: whitesmoke;
+}

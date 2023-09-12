@@ -1,0 +1,17 @@
+.alert1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.alert-success{
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 20px
+}
+.alert-success h4{
+    font-size: ;
+    font-weight: bold;
+    font-family: ;
+
+}

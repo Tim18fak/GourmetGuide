@@ -1,0 +1,107 @@
+.Review__option{
+    position: relative;
+    top: 20px;
+}
+.testimonies{
+   height: 150vh;
+   background-color: purple;
+    background-image: url();
+    border-top-left-radius: 50%;
+    border-top-right-radius: 10px;
+    
+}
+.testimonies h2{
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    color: gold;
+}
+.testimonies div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;
+}
+
+.testimonies div p:first-child{
+    width: 44ch;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+.testimonies div p:first-child::before{
+    content: "\201C";
+    color: green;
+   font-weight: bold;
+   position: relative;
+   top: 10px;
+   font-size: 4rem;
+}
+.testimonies div p:last-child img{
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 3px 4px gold;
+}
+.testimonies div p:last-child span{
+    display: block;
+    font-size: 1.2rem;
+    margin: 3px;
+    padding: 5px;
+    color: gold;
+}
+.testimonies h2{
+    color: rgb(255, 255, 255);
+}
+.footer{
+    background-color: green;
+    background-image: url();
+    
+}
+.footer__info{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+.footer___info-option{
+    position: relative;
+    top: 20px;
+}
+.footer___info-option h2{
+    font-size: 1.3rem;
+    margin: 10px;
+    color: antiquewhite;
+    padding: 10px;
+}
+.footer__title-theme{
+    color: aqua;
+    font-size: 1.5rem;
+}
+.footer___info-option ul{
+    list-style: none;
+}
+.footer___info-option ul li{
+    color: white;
+}
+.option5 ul li{
+    margin: 2px;
+}
+.fa-copyright{
+    text-align: center;
+}
+.copyright__init{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    color: bisque;
+}
+.fa-copyright > .copyright__declaration {
+ color: gainsboro;
+ padding: 20px;
+}
