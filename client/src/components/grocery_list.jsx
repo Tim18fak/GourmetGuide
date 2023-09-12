@@ -20,7 +20,7 @@ const My_groceryList =  ({fetchgroceryList,fetchdata,Trigger,}) => {
 	  const response = await axios.get(`${GetUrl}?username=${username}`);
     setfetchgrocery(response.data)
   }catch(error){
-	console.log('error',error);
+	console.error('error',error);
   }
 }
   fetchdata(fetchGrocery)
