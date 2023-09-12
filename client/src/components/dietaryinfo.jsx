@@ -29,7 +29,7 @@ const Addmeal = ({mealinfo}) => {
       MealImageUrl: image,
       sourceUrl:sourceUrl,
     }
-    const GetUrl = `http://localhost:5000/mealplan//mealplan`
+    const GetUrl = `http://100.25.150.44:5000/mealplan/mealplan`
     const { data } = await axios.post(`${GetUrl}?username=${username}`, mealdataTOserver)
     console.log(data)
     console.log(mealinfo)
