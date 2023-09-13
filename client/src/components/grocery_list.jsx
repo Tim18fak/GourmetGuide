@@ -4,6 +4,7 @@ import axios from 'axios'
 import Cookies from 'universal-cookie'
 import Addgrocery from './addgrocery'
 import UpdateGrocerylist from './updateGrocerylist'
+import { FaTrash } from 'react-icons/fa';
 
 const cookie = new Cookies()
 const username = cookie.get('username')
@@ -70,7 +71,7 @@ const handleChildData = (data) => {
   }
   const deletegroceryList = async (dataID) => {
     const username = cookie.get('username');
-    const DeleteUrl = `http://localhost:5000/groceryList`;
+    const DeleteUrl = `http://100.25.150.44:5000/groceryList`;
     console.log('hello')
     settrigger((prevtrigger) => trigger + 1)
     console.log(trigger)
@@ -79,7 +80,7 @@ const handleChildData = (data) => {
     const response = await axios.delete(`${DeleteUrl}/deletegrocery/${dataID}?username=${username}`);
     const data = response.data;
     console.log(data);
-    const GetUrl = `http://localhost:5000/groceryList/getgroceryList`
+    const GetUrl = `http://100.25.150.44:5000/groceryList/getgroceryList`
     const fetchGrocery = async () => {
     const response = await axios.get(`${GetUrl}?username=${username}`);
     
@@ -128,7 +129,7 @@ const FetchData = (item) => {
       <td>{data.Rate}</td>
       <td>{data.Amount}</td>
       <td>{data.Remarks}</td>
-      <td>{/* <span onClick={() => EditgroceryList(data._id)}>Edit</span> */}<span onClick={() => deletegroceryList(data._id)}>Delete</span></td>
+      <td>{/* <span onClick={() => EditgroceryList(data._id)}>Edit</span> */}<span onClick={() => deletegroceryList(data._id)}><FaTrash size={25} color="red" /></span></td>
     </tr>
         })}
       </tbody>

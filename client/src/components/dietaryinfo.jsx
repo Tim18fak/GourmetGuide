@@ -57,7 +57,7 @@ const Dietaryinfo = ({cuisine}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    fetch(`https://api.spoonacular.com/recipes/${cuisine.id}/information?apiKey=c7d48a9f326247b0ac65a17a0cc7b023&includeNutrition=true&number=4`)
+    fetch(`https://api.spoonacular.com/recipes/${cuisine.id}/information?apiKey=38d1563e83c24403b4eb7b180ff0593e&includeNutrition=true&number=4`)
     .then((response) => response.json())
     .then((data) => {
       setextrainfo(data)

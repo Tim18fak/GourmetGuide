@@ -57,7 +57,7 @@ const Cuisineinfo = ({cuisine}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    fetch(`https://api.spoonacular.com/recipes/${cuisine.id}/information?apiKey=c7d48a9f326247b0ac65a17a0cc7b023&includeNutrition=true&number=4`)
+    fetch(`https://api.spoonacular.com/recipes/${cuisine.id}/information?apiKey=fe334b7530be44148ba2cc8625ed36c4&includeNutrition=true&number=4`)
     .then((response) => response.json())
     .then((data) => {
       setextrainfo(data)
@@ -106,9 +106,8 @@ const Cuisineinfo = ({cuisine}) => {
       </aside>
       {<Addmeal mealinfo={extrainfo} />}
      <div className='extraInfo__Dish'>
-        {/* {isHovered && shouldRender && <ExtraCuisineInfo extrainfo={extrainfo} />} */}
+        {isHovered && shouldRender && <ExtraCuisineInfo extrainfo={extrainfo} />}
       </div>
-      
       
     </div>
   )

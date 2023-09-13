@@ -86,7 +86,8 @@ const Addgrocery = ({ onAddGrocery, onChildData,fetch}) => {
         Amount,
         Remarks
       } = GroceryForm
-    const URL = 'http://localhost:5000/groceryList/addgroceryList';
+    const URL = 'http://100.25.150.44:5000/groceryList/addgroceryList';
+	try{
     const { data } = await axios.post(`${URL}?username=${username}`, {
       Item,
         Description,
@@ -102,6 +103,9 @@ const Addgrocery = ({ onAddGrocery, onChildData,fetch}) => {
       fetch(setfetchtrigger((prev) => fetchtrigger + 1))
       console.log(fetchtrigger)
     }
+	} catch(error){
+		console.error('errorr',error)
+	}
   }
 
   const HandleShowGroceryForm = () => {

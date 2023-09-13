@@ -15,9 +15,9 @@ const Cuisine = () => {
   const handleChange = (e) => {
     setCalories(e.target.value)
   }
-  const randomPage = Math.floor(Math.random() * 20) + 1;
+  const randomPage = Math.floor(Math.random() * 40) + 1;
   const getMealData = () => {
-    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=c7d48a9f326247b0ac65a17a0cc7b023&cuisine=${calories}&number=4&offset=${randomPage}&exclude=${intolerences}`)
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=fe334b7530be44148ba2cc8625ed36c4&cuisine=${calories}&number=4&offset=${randomPage}&exclude=${intolerences}`)
     .then((response) => response.json())
     .then((data) => {
       setMealData(data.results)

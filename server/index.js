@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 5000;
 require('dotenv').config();
 
 app.use(cors());
+app.use(cors({ origin: 'http://100.25.150.44:3000' }))
 app.use(express.json());
 app.use(express.urlencoded());
 
@@ -24,4 +25,6 @@ app.use('/user', userRoutes);  // Use the new user routes
 app.use('/mealplan',mealPlan)
 app.use('/groceryList',grocerylist)
 app.use('/Email', Email)
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on IP 0.0.0.0 and port ${PORT}`);
+});

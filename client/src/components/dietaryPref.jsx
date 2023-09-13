@@ -20,7 +20,7 @@ const DietaryPref = () => {
   const getMealData = () => {
     
   
-    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=c7d48a9f326247b0ac65a17a0cc7b023&diet=${diet}&number=4&offset=${randomPage}&addRecipeNutrition=true&exclude=${intolerences}`)
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=38d1563e83c24403b4eb7b180ff0593e&diet=${diet}&number=4&offset=${randomPage}&addRecipeNutrition=true&exclude=${intolerences}`)
     .then((response) => response.json())
     .then((data) => {
       setMealData(data.results)

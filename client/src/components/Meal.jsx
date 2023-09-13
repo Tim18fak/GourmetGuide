@@ -29,7 +29,7 @@ const Addmeal = ({mealinfo}) => {
       MealImageUrl: image,
       sourceUrl:sourceUrl,
     }
-    const GetUrl = `http://localhost:5000/mealplan//mealplan`
+    const GetUrl = `http://100.25.150.44:5000/mealplan//mealplan`
     try{
 	  const { data } = await axios.post(`${GetUrl}?username=${username}`, mealdataTOserver)
     console.log(data)
@@ -62,7 +62,7 @@ const Meal = ({meal}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [user, setUser] = useState('') // Define user using useState hook
   useEffect(() => {
-    fetch(`https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=38d1563e83c24403b4eb7b180ff0593e&includeNutrition=true`)
+    fetch(`https://api.spoonacular.com/recipes/${meal.id}/information?apiKey=fe334b7530be44148ba2cc8625ed36c4&includeNutrition=true`)
       .then((response) => response.json())
       .then((data) => {
         setUser(data)
